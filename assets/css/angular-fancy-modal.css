@@ -295,7 +295,7 @@ body.fancymodal-open {
     display: -ms-flexbox;
     display: flex;
     text-align: left;
-    height: 98%;
+    height: 100%;
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;

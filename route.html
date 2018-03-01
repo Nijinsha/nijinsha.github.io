@@ -1,0 +1,126 @@
+<div class="project" style="transform: matrix(1, 0, 0, 1, 0, 0); display:one">
+    <div style="visibility: inherit; opacity: 1;">
+        <div class="smoothie sticky" data-scrollbar="" tabindex="1" style="overflow: hidden; outline: none;">
+            <article class="scroll-content" style="overflow:auto;height:560px;">
+                <div class="content" style="overflow:auto">
+                    <div class="avatar-container">
+                        <div data-image="" class="image-avatar" style="background-image: url(./assets/image/paintings.jpg)"><img src="./assets/image/paintings.jpg" alt="Chris Do"></div>
+                    </div>
+                    <div class="intro">
+                        <div class="intro-content">
+                            <div class="header">
+                                <h1 class="workshop-name">Route to Picasso</h1>
+                                <div>
+                                </div>
+                            </div>
+                            <div class="middle"><span style="font-size: 15px"></span>
+                                <h2 style="text-transform: none">Price Worth 1.5K</h2>
+                            </div>
+                            <div class="bottom"><br><br/><br><br/><br><br/>
+                                <h4 class="name" style="font-size:18px;text-transform: unset">Sreejitha M C</h4>
+                                <span>+91 79072 00138</span></div>
+                            <div class="last"><span>scroll down</span></div>
+                        </div>
+                    </div>
+                    <div class="preloaded-content">
+                        <p class="intro-text" id="intro_text"> We are calling for all the Artists out there. Be part of world of colours
+                        </p>
+                        <article class="info">
+                            <ul>
+                                <li id="first">
+                                    <h4>Date</h4>
+                                    <p>06-08<br>March</p>
+                                </li>
+                                <li>
+                                    <h4>Start in</h4>
+                                    <p>11.15 AM <br>06 March</p>
+                                </li>
+                                <li>
+                                    <h4>Ends In</h4>
+                                    <p>12.45PM<br>10:00 AM</p>
+                                </li>
+                                <li id="sec">
+                                    <h4>Colours</h4>
+                                    <p>Red, Green, Blue</p>
+                                </li>
+                                <li>
+                                    <h4>Duriation</h4>
+                                    <p>1 &amp; 1/2<br>Hours</p>
+                                </li>
+                                <li>
+                                    <h4>Reg Fee</h4>
+                                    <p>50<br>Rs</p>
+                                </li>
+                            </ul>
+                        </article>
+                        <div class="cta" id="hlo"><span></span></div>
+
+                        <div class="paragraphs">
+                            <article class="paragraph">
+                                <h4 class="is-visible">Rules</h4>
+                                <div class="list is-visible">
+                                    <div class="col-md-12">
+                                        <ul class="flat-list" style="font-size:16px;">
+                                            <li><i class="fa fa-check">The registration will be only up to 11 AM</i></li>
+                                            <li><i class="fa fa-check">Refunding is not possible for registered participants</i></li>
+                                            <li><i class="fa fa-check">The registration fee is Rs.50.</i></li>
+                                            <li><i class="fa fa-check">The decision of the judge will be final and will not be subjected to any change.</i></li>
+                                            <li><i class="fa fa-check">Participant should report before 9.30 AM at the venue.</i></li>
+                                            <li><i class="fa fa-check">SNGIST is not responsible for lost, late, damaged, incomplete, illegible, or misdirected entries</i></li>
+                                            <li><i class="fa fa-check">The topic will be given on spot.</i></li>
+                                            <li><i class="fa fa-check">The time limit will be 1.30 hrs.</i></li>
+                                            <li><i class="fa fa-check">The paints,brush and other necessary materials should be brought by the participants.</i></li>
+                                            <li><i class="fa fa-check">Only primary colours <b>[Red, Blue, Green]</b> should be used. Other colours and acrylic paints will be permitted.</i></li>
+                                            <li><i class="fa fa-check">Sheets will be provided by the team here.</i></li>
+                                            <li><i class="fa fa-check">Other references such as Books, Mobile phones etc will not be permitted.</i></li>
+                                            <li><i class="fa fa-check">The game will start at 11.15 AM sharply.</i></li>
+                                            <li><i class="fa fa-check">The warning bell will be given at 12.30 PM, and the competition end at  12.45PM</i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </article>
+                        </div>
+
+                    </div>
+
+                    <div style="height: 50px;">
+
+                    </div>
+                </div>
+                <div class="resize-sensor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden;">
+                    <div class="resize-sensor-expand" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;">
+                        <div style="position: absolute; left: 0px; top: 0px; transition: 0s; width: 100000px; height: 100000px;"></div>
+                    </div>
+                    <div class="resize-sensor-shrink" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;">
+                        <div style="position: absolute; left: 0; top: 0; transition: 0s; width: 200%; height: 200%"></div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</div>
+
+<script src="./assets/js/smooth-scrollbar.js"></script>
+<script>
+    var Scrollbar = window.Scrollbar;
+    var scrollbars = Scrollbar.init(document.querySelector('.content'));
+    var cta_fst = document.getElementById("hlo");
+    var li_sec = document.getElementById("sec");
+    var li_fst = document.getElementById("first");
+    var intro_text = document.getElementById('intro_text');
+    scrollbars.addListener(function(status) {
+        if (scrollbars.isVisible(cta_fst)) {
+            $(".cta").addClass("is-visible");
+        }
+        if (scrollbars.isVisible(li_fst)) {
+            $(".info > ul > li").slice(0, 3).addClass("is-visible")
+        }
+        if (scrollbars.isVisible(li_sec)) {
+            $(".info > ul > li").slice(3, 6).addClass("is-visible")
+        }
+        if (scrollbars.isVisible(intro_text)) {
+            $(".intro-text").addClass("is-visible");
+        }
+    });
+</script>

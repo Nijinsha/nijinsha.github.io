@@ -1,0 +1,117 @@
+<div class="project" style="transform: matrix(1, 0, 0, 1, 0, 0); display:one">
+    <div style="visibility: inherit; opacity: 1;">
+        <div class="smoothie sticky" data-scrollbar="" tabindex="1" style="overflow: hidden; outline: none;">
+            <article class="scroll-content" style="overflow:auto;height:560px;">
+                <div class="content" style="overflow:auto">
+                    <div class="avatar-container">
+                        <div data-image="" class="image-avatar" style="background-image: url(./assets/image/race.jpg)"><img src="./assets/image/race.jpg" alt="Chris Do"></div>
+                    </div>
+                    <div class="intro">
+                        <div class="intro-content">
+                            <div class="header">
+                                <h1 class="workshop-name" style="width: 400px">Let's Race</h1>
+                                <div>
+                                </div>
+                            </div>
+                            <div class="middle">
+                                <br><span style="font-size: 15px"></span>
+                                <h2 style="text-transform: none">NFS Mostwanted</h2>
+                                <h2 style="text-transform: none">Counter Strike</h2>
+                            </div>
+                            <div class="bottom"><br><br/><br><br/><br><br/>
+                                <h4 class="name" style="font-size:18px;text-transform: unset">Sushith K S</h4>
+                                <span>+91 86067 34680</span></div>
+                            <div class="last"><span>scroll down</span></div>
+                        </div>
+                    </div>
+                    <div class="preloaded-content">
+                        <p class="intro-text" id="intro_text"> Calling all gamers. The most ever thrilling Nedd For Speed Mostwanted.Bet your will and win them all. Let's Race..!
+                        </p>
+                        <article class="info">
+                            <ul>
+                                <li id="first">
+                                    <h4>Date</h4>
+                                    <p>08<br>March</p>
+                                </li>
+                                <li>
+                                    <h4>NFS</h4>
+                                    <p>30 Rs.</p>
+                                </li>
+                                <li>
+                                    <h4>Counter Strike</h4>
+                                    <p>30 Rs.</p>
+                                </li>
+                            </ul>
+                        </article>
+                        <div class="cta" id="hlo"><span></span></div>
+
+                        <div class="paragraphs">
+                            <article class="paragraph">
+                                <h4 class="is-visible">Rules</h4>
+                                <div class="list is-visible">
+                                    <div class="col-md-12">
+                                        <ul class="flat-list" style="font-size:16px;">
+                                            <li><i class="fa fa-check"><b>NFS Mostwanted<b></i></li>
+                                            <ul class="flat-list" style="font-size:16px;">
+                                                <li><i class="fa fa-check">There can be only 4 members for counter strike</i></li>
+                                                <li><i class="fa fa-check">No foul Language is allowed while playing.</i></li>
+                                                <li><i class="fa fa-check">Participants shall obey the event coordinator all times. His decision is final.</i></li>
+                                                <li><i class="fa fa-check">The participants should not mishandle the PCs and consoles. Any damage caused to them will be borne by you.</i></li>
+
+                                            </ul>
+                                            <li><i class="fa fa-check"><b>Power Arm<b></i></li>
+                                            <ul class="flat-list" style="font-size:16px;">
+                                                <li><i class="fa fa-check">Individual registration</i></li>
+                                                <li><i class="fa fa-check">Multiple entries from one college are allowed.</i></li>
+                                                <li><i class="fa fa-check">No foul Language is allowed while playing.</i></li>
+                                                <li><i class="fa fa-check">Participants shall obey the event coordinator all times. His decision is final..</i></li>
+                                                <li><i class="fa fa-check">The participants should not mishandle the PCs and consoles. Any damage caused to them will be borne by you.</i></li>
+                                            </ul>
+                                            <div style="height: 50px;">
+
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </article>
+                        </div>
+
+                    </div>
+
+                    <div style="height: 50px;">
+
+                    </div>
+                </div>
+                <div class="resize-sensor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden;">
+                    <div class="resize-sensor-expand" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;">
+                        <div style="position: absolute; left: 0px; top: 0px; transition: 0s; width: 100000px; height: 100000px;"></div>
+                    </div>
+                    <div class="resize-sensor-shrink" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;">
+                        <div style="position: absolute; left: 0; top: 0; transition: 0s; width: 200%; height: 200%"></div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</div>
+
+<script src="./assets/js/smooth-scrollbar.js"></script>
+<script>
+    var Scrollbar = window.Scrollbar;
+    var scrollbars = Scrollbar.init(document.querySelector('.content'));
+    var cta_fst = document.getElementById("hlo");
+    var li_fst = document.getElementById("first");
+    var intro_text = document.getElementById('intro_text');
+    scrollbars.addListener(function(status) {
+        if (scrollbars.isVisible(cta_fst)) {
+            $(".cta").addClass("is-visible");
+        }
+        if (scrollbars.isVisible(li_fst)) {
+            $(".info > ul > li").slice(0, 3).addClass("is-visible")
+        }
+        if (scrollbars.isVisible(intro_text)) {
+            $(".intro-text").addClass("is-visible");
+        }
+    });
+</script>
